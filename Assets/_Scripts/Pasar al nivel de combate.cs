@@ -1,9 +1,18 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 public class PasarAlNivelDeCombate : MonoBehaviour
 {
+    
+
+    
     private bool jugadorEnRango = false;
+
+    void Start()
+    {
+       
+    }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -25,6 +34,7 @@ public class PasarAlNivelDeCombate : MonoBehaviour
     {
         if (jugadorEnRango && Input.GetKeyDown(KeyCode.E))
         {
+            
             SceneManager.LoadScene("Escena de Combate 1");
         }
     }

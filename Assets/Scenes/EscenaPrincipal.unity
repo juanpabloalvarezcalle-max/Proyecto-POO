@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 393309890}
   - component: {fileID: 393309891}
   - component: {fileID: 393309892}
+  - component: {fileID: 393309893}
   m_Layer: 0
   m_Name: Enemy_Test
   m_TagString: Untagged
@@ -313,6 +314,19 @@ MonoBehaviour:
   dialoguesLines:
   - "Est\xE1 es una prueba de c\xF3mo funcionar\xE1 el juego"
   - Soy el enemigo de prueba, vamos a pelear
+  textoTerminado: 0
+--- !u!114 &393309893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393309887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b42a83a1116d94174b4c63ce8251fa17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Enemigo
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,7 +353,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!114 &519420030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -347,7 +361,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
   m_Name: 
@@ -671,6 +685,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 813674281}
   m_CullTransparentMesh: 1
+--- !u!1001 &836034916
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 431370191325124252, guid: 98ea705ca1976d145bb586beacd00f07, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.365303
+      objectReference: {fileID: 0}
+    - target: {fileID: 431370191325124252, guid: 98ea705ca1976d145bb586beacd00f07, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.1265376
+      objectReference: {fileID: 0}
+    - target: {fileID: 431370191325124252, guid: 98ea705ca1976d145bb586beacd00f07, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 431370191325124252, guid: 98ea705ca1976d145bb586beacd00f07, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 431370191325124252, guid: 98ea705ca1976d145bb586beacd00f07, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 431370191325124252, guid: 98ea705ca1976d145bb586beacd00f07, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 431370191325124252, guid: 98ea705ca1976d145bb586beacd00f07, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 431370191325124252, guid: 98ea705ca1976d145bb586beacd00f07, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 431370191325124252, guid: 98ea705ca1976d145bb586beacd00f07, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 431370191325124252, guid: 98ea705ca1976d145bb586beacd00f07, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7032899170727762454, guid: 98ea705ca1976d145bb586beacd00f07, type: 3}
+      propertyPath: m_Name
+      value: Fire_05
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 98ea705ca1976d145bb586beacd00f07, type: 3}
 --- !u!1 &984919194
 GameObject:
   m_ObjectHideFlags: 0
@@ -1012,3 +1083,4 @@ SceneRoots:
   - {fileID: 984919198}
   - {fileID: 1322556754}
   - {fileID: 1353665837}
+  - {fileID: 836034916}

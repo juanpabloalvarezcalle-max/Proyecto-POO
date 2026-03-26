@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class NewMonoBehaviourScript : MonoBehaviour
 {
 
-    // [SerializeField] private GameObject dialogueMark;
+
 
     [SerializeField] private GameObject dialoguePanel;
 
@@ -18,6 +18,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
     private bool isPlayerInRange;
     private bool didDialogueStart;
     private int lineIndex;
+    public bool textoTerminado;
 
     // Update is called once per frames
     void Update()
@@ -29,16 +30,13 @@ public class NewMonoBehaviourScript : MonoBehaviour
                 StartDialogue();
             }
 
-            else if (dialogueText.text == dialoguesLines[lineIndex])
+            else if (textoTerminado)
             {
                 NextDialogueLine();
             }
 
+
         }
-
-
-
-
     }
 
     void StartDialogue()
@@ -57,31 +55,20 @@ public class NewMonoBehaviourScript : MonoBehaviour
         {
             StartCoroutine(Showline());
 
-            lineIndex++;
-            if (lineIndex < dialoguesLines.Length)
-            {
-                StartCoroutine(Showline());
-            }
-            else
-            {
-                didDialogueStart = false;
-                dialoguePanel.SetActive(false);
-                SceneManager.LoadScene("Escena de Combate 1");
-
-            }
-
         }
 
         else
         {
             didDialogueStart = false;
             dialoguePanel.SetActive(false);
+            SceneManager.LoadScene("Escena de Combate 1");
 
         }
-    }
 
+    }
     private IEnumerator Showline()
     {
+        textoTerminado = false;
         dialogueText.text = string.Empty;
 
         foreach (char ch in dialoguesLines[lineIndex])
@@ -89,6 +76,10 @@ public class NewMonoBehaviourScript : MonoBehaviour
             dialogueText.text += ch;
             yield return new WaitForSeconds(typingTime);
         }
+
+        textoTerminado = true;
+
+
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -116,5 +107,9 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
     }
 
+    public void TextoTerminado()
+    {
+
+    }
 
 }
