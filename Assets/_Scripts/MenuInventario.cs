@@ -9,7 +9,7 @@ public class MenuInventario : MonoBehaviour {
     [Header("Referencias")]
     [SerializeField] private RectTransform itemContainer;
 
-    [Header("Tamaños")]
+    [Header("Tamaï¿½os")]
     [SerializeField] private Vector2 collapsedSize;
     [SerializeField] private Vector2 expandedSize = new Vector2(360f, 420f);
 
@@ -113,13 +113,13 @@ public class MenuInventario : MonoBehaviour {
         jugador.SetVida(jugador.GetVida() + 50);
     }
     public void item3() {
-        jugador.SetDanio(jugador.GetDAnio() + 10);
+        jugador.SetDanio(jugador.GetDanio() + 10);
     }
     public void item4() {
-        jugador.SetDanio(jugador.GetDAnio() + 15);
+        jugador.SetDanio(jugador.GetDanio() + 15);
     }
     public void item5() {
-        jugador.SetDanio(jugador.GetDAnio() + 20);
+        jugador.SetDanio(jugador.GetDanio() + 20);
     }
 
 }
