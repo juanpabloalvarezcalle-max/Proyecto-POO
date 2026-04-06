@@ -2,6 +2,13 @@ using UnityEngine;
 
 public class NPC : Character, IInteractuable
 {
+    [SerializeField] private NewMonoBehaviourScript scriptDialogo;
+
+    public void Interactuar()
+    {
+        scriptDialogo.StartDialogue();
+    }
+    
     void Awake()
     {
         SetVida(50);
@@ -14,8 +21,5 @@ public class NPC : Character, IInteractuable
         Destroy(gameObject);
     }
 
-    public void Interactuar()
-    {
-        Debug.Log("El NPC está interactuando con el jugador.");
-    }
+   
 }

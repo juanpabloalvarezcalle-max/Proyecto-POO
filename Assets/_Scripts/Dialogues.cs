@@ -10,6 +10,8 @@ public class NewMonoBehaviourScript : MonoBehaviour
     [SerializeField] private bool cargarEscenaAlTerminar = false;
     [SerializeField] private string nombreEscena;
     [SerializeField] private GameObject dialoguePanel;
+    [SerializeField] private GameObject interactuableObj;
+    private IInteractuable interactuable;
 
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField, TextArea(4, 6)] private string[] dialoguesLines;
@@ -22,25 +24,27 @@ public class NewMonoBehaviourScript : MonoBehaviour
     public bool textoTerminado;
 
     // Update is called once per frames
+    void Awake()
+    {
+        interactuable = interactuableObj.GetComponent<IInteractuable>();
+    }   
+    
     void Update()
     {
-        if (isPlayerInRange && Input.GetKeyDown(KeyCode.E))
+    if (isPlayerInRange && Input.GetKeyDown(KeyCode.E))
+    {
+        if (!didDialogueStart)
         {
-            if (!didDialogueStart)
-            {
-                StartDialogue();
-            }
-
-            else if (textoTerminado)
-            {
-                NextDialogueLine();
-            }
-
-
+            interactuable.Interactuar();
+        }
+        else if (textoTerminado)
+        {
+            NextDialogueLine();
         }
     }
+}
 
-    void StartDialogue()
+   public void StartDialogue()
     {
         didDialogueStart = true;
         dialoguePanel.SetActive(true);

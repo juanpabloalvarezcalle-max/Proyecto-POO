@@ -1,8 +1,16 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Enemigo : Character, IDaniable
+public class Enemigo : Character, IDaniable, IInteractuable 
 {
+
+    [SerializeField] private NewMonoBehaviourScript scriptDialogo;
+
+        public void Interactuar()
+     {
+        scriptDialogo.StartDialogue();
+    }
+    
     void Awake()
     {
         SetVida(200);
