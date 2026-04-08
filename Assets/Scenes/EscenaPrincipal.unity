@@ -275,6 +275,7 @@ MonoBehaviour:
   cargarEscenaAlTerminar: 1
   nombreEscena: Escena de Combate 1
   dialoguePanel: {fileID: 1799303703}
+  interactuableObj: {fileID: 393309887}
   dialogueText: {fileID: 813674283}
   dialoguesLines:
   - "Est\xE1 es una prueba de c\xF3mo funcionar\xE1 el juego"
@@ -292,6 +293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b42a83a1116d94174b4c63ce8251fa17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemigo
+  scriptDialogo: {fileID: 393309892}
 --- !u!61 &393309894
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1021,6 +1023,7 @@ GameObject:
   - component: {fileID: 1498581849}
   - component: {fileID: 1498581848}
   - component: {fileID: 1498581847}
+  - component: {fileID: 1498581852}
   m_Layer: 0
   m_Name: NPC_TEST
   m_TagString: Untagged
@@ -1126,6 +1129,7 @@ MonoBehaviour:
   cargarEscenaAlTerminar: 0
   nombreEscena: 
   dialoguePanel: {fileID: 1799303703}
+  interactuableObj: {fileID: 1498581846}
   dialogueText: {fileID: 813674283}
   dialoguesLines:
   - Hola Chica, esto es una prueba de los NPC
@@ -1205,6 +1209,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1498581852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498581846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a923e027d6e06402e8a3156ff27ac7d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPC
+  scriptDialogo: {fileID: 1498581849}
 --- !u!1 &1799303703
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,7 +10,8 @@ public abstract class Character : MonoBehaviour
     private int vidaMaxima = 100;
     private List<Habilidad> habilidades = new List<Habilidad>();
 
-    public int GetVida() { return vida; }
+    public int GetVida()
+    { return vida; }
 
     public void SetVida(int nuevaVida)
     {
