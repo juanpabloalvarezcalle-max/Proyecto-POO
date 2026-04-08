@@ -8,7 +8,7 @@ public class NPC : Character, IInteractuable
     {
         scriptDialogo.StartDialogue();
     }
-    
+
     void Awake()
     {
         SetVida(50);
@@ -21,5 +21,5 @@ public class NPC : Character, IInteractuable
         Destroy(gameObject);
     }
 
-   
+
 }
