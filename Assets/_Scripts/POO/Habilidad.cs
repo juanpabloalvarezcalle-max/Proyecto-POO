@@ -56,7 +56,5 @@ public class Habilidad
     {
         return coolDownActual == 0;
     }
-
-
 }
 
