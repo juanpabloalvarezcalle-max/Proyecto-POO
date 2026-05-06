@@ -2,13 +2,13 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
+  serializedVersion: 3
   tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Personajes
   - Water
   - UI
   - 
@@ -41,3 +41,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Superior
+    uniqueID: 986259721
+    locked: 0
+  - name: Personajes
+    uniqueID: 1328161907
+    locked: 0
+  - name: Deco
+    uniqueID: 2060380421
+    locked: 0
+  m_RenderingLayers:
+  - Default
