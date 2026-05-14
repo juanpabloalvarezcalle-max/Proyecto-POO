@@ -7,8 +7,11 @@ public class NewMonoBehaviourScript : MonoBehaviour
 {
 
 
-
+    [SerializeField] private bool cargarEscenaAlTerminar = false;
+    [SerializeField] private string nombreEscena;
     [SerializeField] private GameObject dialoguePanel;
+    [SerializeField] private GameObject interactuableObj;
+    private IInteractuable interactuable;
 
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField, TextArea(4, 6)] private string[] dialoguesLines;
@@ -21,25 +24,27 @@ public class NewMonoBehaviourScript : MonoBehaviour
     public bool textoTerminado;
 
     // Update is called once per frames
+    void Awake()
+    {
+        interactuable = interactuableObj.GetComponent<IInteractuable>();
+    }   
+    
     void Update()
     {
-        if (isPlayerInRange && Input.GetKeyDown(KeyCode.E))
+    if (isPlayerInRange && Input.GetKeyDown(KeyCode.E))
+    {
+        if (!didDialogueStart)
         {
-            if (!didDialogueStart)
-            {
-                StartDialogue();
-            }
-
-            else if (textoTerminado)
-            {
-                NextDialogueLine();
-            }
-
-
+            interactuable.Interactuar();
+        }
+        else if (textoTerminado)
+        {
+            NextDialogueLine();
         }
     }
+}
 
-    void StartDialogue()
+   public void StartDialogue()
     {
         didDialogueStart = true;
         dialoguePanel.SetActive(true);
@@ -49,38 +54,36 @@ public class NewMonoBehaviourScript : MonoBehaviour
     }
 
     private void NextDialogueLine()
+{
+    lineIndex++;
+    if (lineIndex < dialoguesLines.Length)
     {
-        lineIndex++;
-        if (lineIndex < dialoguesLines.Length)
-        {
-            StartCoroutine(Showline());
-
-        }
-
-        else
-        {
-            didDialogueStart = false;
-            dialoguePanel.SetActive(false);
-            SceneManager.LoadScene("Escena de Combate 1");
-
-        }
-
+        StartCoroutine(Showline());
     }
-    private IEnumerator Showline()
+    else
     {
-        textoTerminado = false;
-        dialogueText.text = string.Empty;
-
-        foreach (char ch in dialoguesLines[lineIndex])
+        didDialogueStart = false;
+        dialoguePanel.SetActive(false);
+        if (cargarEscenaAlTerminar)
         {
-            dialogueText.text += ch;
-            yield return new WaitForSeconds(typingTime);
+            SceneManager.LoadScene(nombreEscena);
         }
-
-        textoTerminado = true;
-
-
     }
+}
+
+private IEnumerator Showline()
+{
+    textoTerminado = false;
+    dialogueText.text = string.Empty;
+
+    foreach (char ch in dialoguesLines[lineIndex])
+    {
+        dialogueText.text += ch;
+        yield return new WaitForSeconds(typingTime);
+    }
+
+    textoTerminado = true;
+}
 
     void OnTriggerEnter2D(Collider2D collision)
     {
