@@ -6,6 +6,23 @@ public class Movement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 movement;
 
+    void Awake()
+    {
+        // Restaurar posición si venimos de una pelea (antes de que corra cualquier otra cosa)
+        if (PlayerPrefs.HasKey("PlayerPosX") && PlayerPrefs.HasKey("PlayerPosY"))
+        {
+            float x = PlayerPrefs.GetFloat("PlayerPosX");
+            float y = PlayerPrefs.GetFloat("PlayerPosY");
+            transform.position = new Vector3(x, y, transform.position.z);
+            Debug.Log("Posición restaurada a: " + x + ", " + y);
+
+            // Limpiar para no reaplicar en reinicios normales
+            PlayerPrefs.DeleteKey("PlayerPosX");
+            PlayerPrefs.DeleteKey("PlayerPosY");
+            PlayerPrefs.Save();
+        }
+    }
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();

@@ -34,7 +34,20 @@ public class PasarAlNivelDeCombate : MonoBehaviour
     {
         if (jugadorEnRango && Input.GetKeyDown(KeyCode.E))
         {
-            
+            // Guardar la posición del jugador antes de ir al combate
+            GameObject jugador = GameObject.FindGameObjectWithTag("Player");
+            if (jugador != null)
+            {
+                PlayerPrefs.SetFloat("PlayerPosX", jugador.transform.position.x);
+                PlayerPrefs.SetFloat("PlayerPosY", jugador.transform.position.y);
+                PlayerPrefs.Save();
+                Debug.Log("POSICIÓN GUARDADA: " + jugador.transform.position.x + ", " + jugador.transform.position.y);
+            }
+            else
+            {
+                Debug.LogError("NO SE ENCONTRÓ JUGADOR CON TAG 'Player'");
+            }
+
             SceneManager.LoadScene("Escena de Combate 1");
         }
     }

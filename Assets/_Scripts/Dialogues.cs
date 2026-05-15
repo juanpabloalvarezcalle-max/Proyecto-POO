@@ -49,6 +49,14 @@ public class NewMonoBehaviourScript : MonoBehaviour
         didDialogueStart = true;
         dialoguePanel.SetActive(true);
         //dialogueMark.SetActive(false);
+        
+        GameObject jugador = GameObject.FindGameObjectWithTag("Player");
+        if (jugador != null)
+        {
+            Movement mov = jugador.GetComponent<Movement>();
+            if (mov != null) mov.enabled = false;
+        }
+
         lineIndex = 0;
         StartCoroutine(Showline());
     }
@@ -64,8 +72,24 @@ public class NewMonoBehaviourScript : MonoBehaviour
     {
         didDialogueStart = false;
         dialoguePanel.SetActive(false);
+        
+        GameObject jugador = GameObject.FindGameObjectWithTag("Player");
+        if (jugador != null)
+        {
+            Movement mov = jugador.GetComponent<Movement>();
+            if (mov != null) mov.enabled = true;
+        }
+
         if (cargarEscenaAlTerminar)
         {
+            // Guardar posición del jugador antes de cambiar de escena
+            if (jugador != null)
+            {
+                PlayerPrefs.SetFloat("PlayerPosX", jugador.transform.position.x);
+                PlayerPrefs.SetFloat("PlayerPosY", jugador.transform.position.y);
+                PlayerPrefs.Save();
+                Debug.Log("POSICIÓN GUARDADA: " + jugador.transform.position.x + ", " + jugador.transform.position.y);
+            }
             SceneManager.LoadScene(nombreEscena);
         }
     }

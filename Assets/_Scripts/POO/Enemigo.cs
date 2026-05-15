@@ -11,14 +11,27 @@ public class Enemigo : Character, IDaniable, IInteractuable
         scriptDialogo.StartDialogue();
     }
 
+    private Animator animator;
+
     void Awake()
     {
-        SetVida(200);
-        SetDefensa(5);
-        SetDanio(10);
-        SetVidaMaxima(200);
-        AgregarHabilidad(new Habilidad(40, "Golpetazo", 1));
-        AgregarHabilidad(new Habilidad(60, "Ultra Golpe", 1));
+        animator = GetComponent<Animator>();
+        if (animator == null) animator = GetComponentInChildren<Animator>();
+
+        SetVida(150);
+        SetDefensa(8);
+        SetDanio(12);
+        SetVidaMaxima(150);
+        AgregarHabilidad(new Habilidad(25, "Golpetazo", 1));
+        AgregarHabilidad(new Habilidad(40, "Ultra Golpe", 2));
+    }
+
+    public void AnimarAtaque()
+    {
+        if (animator != null)
+        {
+            animator.SetTrigger("Ataque");
+        }
     }
 
     public override void Morir()

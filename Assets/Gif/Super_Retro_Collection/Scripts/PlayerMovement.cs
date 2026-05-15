@@ -26,6 +26,19 @@ public class PlayerMovement : MonoBehaviour
     void Awake()
     {
         instance = this;
+
+        // Restaurar posición si venimos de una pelea
+        if (PlayerPrefs.HasKey("PlayerPosX") && PlayerPrefs.HasKey("PlayerPosY"))
+        {
+            float x = PlayerPrefs.GetFloat("PlayerPosX");
+            float y = PlayerPrefs.GetFloat("PlayerPosY");
+            transform.position = new Vector3(x, y, transform.position.z);
+            Debug.Log("Posición restaurada a: " + x + ", " + y);
+
+            PlayerPrefs.DeleteKey("PlayerPosX");
+            PlayerPrefs.DeleteKey("PlayerPosY");
+            PlayerPrefs.Save();
+        }
     }
 
     // -----------------------------------------------------------------------------------------

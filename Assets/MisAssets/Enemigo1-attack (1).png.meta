@@ -1,0 +1,834 @@
+fileFormatVersion: 2
+guid: 757f17a9e0d834b0582985ccb1d1087a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6022525326051563206
+    second: Enemigo1-attack (1)_0
+  - first:
+      213: 3440785274710730831
+    second: Enemigo1-attack (1)_1
+  - first:
+      213: -7663969883140745546
+    second: Enemigo1-attack (1)_2
+  - first:
+      213: 171543103239053186
+    second: Enemigo1-attack (1)_3
+  - first:
+      213: -5940837963534319706
+    second: Enemigo1-attack (1)_4
+  - first:
+      213: 5254665700693424508
+    second: Enemigo1-attack (1)_5
+  - first:
+      213: 594483142054972978
+    second: Enemigo1-attack (1)_6
+  - first:
+      213: -5624731475238293216
+    second: Enemigo1-attack (1)_7
+  - first:
+      213: 8953762098925114417
+    second: Enemigo1-attack (1)_8
+  - first:
+      213: 2791315552546666186
+    second: Enemigo1-attack (1)_9
+  - first:
+      213: -1501843175080229699
+    second: Enemigo1-attack (1)_10
+  - first:
+      213: 1917462002097601034
+    second: Enemigo1-attack (1)_11
+  - first:
+      213: 6730533986706829802
+    second: Enemigo1-attack (1)_12
+  - first:
+      213: 5233239307511445468
+    second: Enemigo1-attack (1)_13
+  - first:
+      213: -7769149175851555090
+    second: Enemigo1-attack (1)_14
+  - first:
+      213: 8557182795164296195
+    second: Enemigo1-attack (1)_15
+  - first:
+      213: 1345595119510346213
+    second: Enemigo1-attack (1)_16
+  - first:
+      213: 5797963196633733647
+    second: Enemigo1-attack (1)_17
+  - first:
+      213: 5448382227688402893
+    second: Enemigo1-attack (1)_18
+  - first:
+      213: -1223850944711189500
+    second: Enemigo1-attack (1)_19
+  - first:
+      213: 4050315357553254708
+    second: Enemigo1-attack (1)_20
+  - first:
+      213: 3872030392697420461
+    second: Enemigo1-attack (1)_21
+  - first:
+      213: -1441732746131011940
+    second: Enemigo1-attack (1)_22
+  - first:
+      213: -8134258977923634692
+    second: Enemigo1-attack (1)_23
+  - first:
+      213: 1328661505889920954
+    second: Enemigo1-attack (1)_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: VisionOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Enemigo1-attack (1)_0
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1058
+        width: 176
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c6d81610ee449350800000000000000
+      internalID: 6022525326051563206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo1-attack (1)_1
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1058
+        width: 180
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f48278f2aff10cf20800000000000000
+      internalID: 3440785274710730831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo1-attack (1)_2
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 1059
+        width: 184
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b69a1a2ffb14a590800000000000000
+      internalID: -7663969883140745546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo1-attack (1)_3
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 1058
+        width: 193
+        height: 173
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28f5b342b81716200800000000000000
+      internalID: 171543103239053186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo1-attack (1)_4
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 1058
+        width: 195
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6afb16b1957ed8da0800000000000000
+      internalID: -5940837963534319706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo1-attack (1)_5
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 802
+        width: 195
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c79b2474d925ce840800000000000000
+      internalID: 5254665700693424508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo1-attack (1)_6
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 802
+        width: 195
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23e052b9447004800800000000000000
+      internalID: 594483142054972978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo1-attack (1)_7
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 802
+        width: 189
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 021767d3680f0f1b0800000000000000
+      internalID: -5624731475238293216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo1-attack (1)_8
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 802
+        width: 171
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13499cd9037224c70800000000000000
+      internalID: 8953762098925114417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo1-attack (1)_9
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 802
+        width: 185
+        height: 169
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac6319db4bebcb620800000000000000
+      internalID: 2791315552546666186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo1-attack (1)_10
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 546
+        width: 128
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db48ff0e691682be0800000000000000
+      internalID: -1501843175080229699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo1-attack (1)_11
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 546
+        width: 134
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0a365128813c9a10800000000000000
+      internalID: 1917462002097601034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo1-attack (1)_12
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 546
+        width: 143
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae1ba524009a76d50800000000000000
+      internalID: 6730533986706829802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo1-attack (1)_13
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 546
+        width: 180
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd7b4dc5c6330a840800000000000000
+      internalID: 5233239307511445468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo1-attack (1)_14
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 546
+        width: 202
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee6695ebcff6e2490800000000000000
+      internalID: -7769149175851555090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo1-attack (1)_15
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 290
+        width: 209
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3042adf0a6831c670800000000000000
+      internalID: 8557182795164296195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo1-attack (1)_16
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 290
+        width: 211
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e9d9e5c1a38ca210800000000000000
+      internalID: 1345595119510346213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo1-attack (1)_17
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 290
+        width: 196
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0a5424fec0867050800000000000000
+      internalID: 5797963196633733647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo1-attack (1)_18
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 290
+        width: 195
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcf2be1f4ca8c9b40800000000000000
+      internalID: 5448382227688402893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo1-attack (1)_19
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 290
+        width: 176
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40c967ecc02040fe0800000000000000
+      internalID: -1223850944711189500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo1-attack (1)_20
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 34
+        width: 142
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4316543bb5c953830800000000000000
+      internalID: 4050315357553254708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo1-attack (1)_21
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 34
+        width: 172
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daafe3490273cb530800000000000000
+      internalID: 3872030392697420461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo1-attack (1)_22
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 34
+        width: 197
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9600ddb4bfedfbe0800000000000000
+      internalID: -1441732746131011940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo1-attack (1)_23
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 34
+        width: 196
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf964d58e8e4d1f80800000000000000
+      internalID: -8134258977923634692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo1-attack (1)_24
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 34
+        width: 195
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab7ed4d999a507210800000000000000
+      internalID: 1328661505889920954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 102f75cea2b2a4041bb4b5a5ad611019
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":5.0},"gridSpriteSize":{"x":256.0,"y":256.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Enemigo1-attack (1)_0: 6022525326051563206
+      Enemigo1-attack (1)_1: 3440785274710730831
+      Enemigo1-attack (1)_10: -1501843175080229699
+      Enemigo1-attack (1)_11: 1917462002097601034
+      Enemigo1-attack (1)_12: 6730533986706829802
+      Enemigo1-attack (1)_13: 5233239307511445468
+      Enemigo1-attack (1)_14: -7769149175851555090
+      Enemigo1-attack (1)_15: 8557182795164296195
+      Enemigo1-attack (1)_16: 1345595119510346213
+      Enemigo1-attack (1)_17: 5797963196633733647
+      Enemigo1-attack (1)_18: 5448382227688402893
+      Enemigo1-attack (1)_19: -1223850944711189500
+      Enemigo1-attack (1)_2: -7663969883140745546
+      Enemigo1-attack (1)_20: 4050315357553254708
+      Enemigo1-attack (1)_21: 3872030392697420461
+      Enemigo1-attack (1)_22: -1441732746131011940
+      Enemigo1-attack (1)_23: -8134258977923634692
+      Enemigo1-attack (1)_24: 1328661505889920954
+      Enemigo1-attack (1)_3: 171543103239053186
+      Enemigo1-attack (1)_4: -5940837963534319706
+      Enemigo1-attack (1)_5: 5254665700693424508
+      Enemigo1-attack (1)_6: 594483142054972978
+      Enemigo1-attack (1)_7: -5624731475238293216
+      Enemigo1-attack (1)_8: 8953762098925114417
+      Enemigo1-attack (1)_9: 2791315552546666186
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
